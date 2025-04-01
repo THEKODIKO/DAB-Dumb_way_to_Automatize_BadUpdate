@@ -1,5 +1,7 @@
 # DAB - A Dumb way to Automatize Bad update exploit.
 
+![DAB](https://github.com/THEKODIKO/DAB-Dumb_way_to_Automatize_BadUpdate/blob/2bcbe75b81156ed0d29ba17e6454188d1008a259/assets/DAB_mascot.png "DAB")
+
 **Summary**: Have you ever felt that you have too much time to sit down in front of a screen and turn on your Xbox 360, run the rock band blitz game, only to realize it crashed then you do it again till only your skeleton is left ☠️? If your ans is no, then hey! I feel the same. And then there was this repo.
 
 Anyways, on a serious note if you want automate your badupdate exploit, so it runs automatically upon xbox 360's power on, You are at the right place.
