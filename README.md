@@ -42,7 +42,7 @@ Anyways, on a serious note if you want automate your badupdate exploit, so it ru
 ## Software Setup:
 **Note**: Since you have 2 Raspberry pi picos, one of them will server as a santroller and the other will contain the circuitpython code. Also it doesn't matter which raspberry pi pico is what.
 ### Santroller (1st Raspberry pi pico ):
-- Video link (full setup): 
+- Video link (full setup): https://youtu.be/sRtnlW2Wy2o
 - Pinout (Raspberry pi pico):
 	- A -> 16
 	- B -> 17
