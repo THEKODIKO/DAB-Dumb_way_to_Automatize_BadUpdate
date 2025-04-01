@@ -1,5 +1,17 @@
 # DAB - A Dumb way to Automatize Bad update exploit.
 
+**Summary**: Have you ever felt that you have too much time to sit down in front of a screen and turn on your Xbox 360, run the rock band blitz game, only to realize it crashed then you do it again till only your skeleton is left ☠️? If your ans is no, then hey! I feel the same. And then there was this repo.
+
+Anyways, on a serious note if you want automate your badupdate exploit, so it runs automatically upon xbox 360's power on, You are at the right place.
+
+### Features:
+- Runs automatically upon xbox's power on.
+- It gives audio feedback, so you know at what stage the exploit is. (but this is optional!)
+- It keep trying until it succeeds, plays a tone upon success and enjoy!
+- No need to even connect to any screen (video output) while the system is trying to run the exploit.
+- And in the upcoming version it'll only require a pico and IR transmitter.  (but it'll take some time, any help is highly appreciated.)
+
+
 ## Items Required : 
 
  1. Raspberry pi pico (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/raspberry-pi/SC0915/13624793]
