@@ -47,7 +47,7 @@
 ## Software Setup:
 **Note**: Since you have 2 Raspberry pi picos, one of them will server as a santroller and the other will contain the circuitpython code. Also it doesn't matter which raspberry pi pico is what.
 ### Santroller (the controller emulating Raspberry pi pico ):
-- Video link (full setup): https://youtu.be/sRtnlW2Wy2o
+- Video link (full setup, also check the description): https://youtu.be/sRtnlW2Wy2o
 - Pinout (Pulled Down) (Raspberry pi pico):
 	- A -> 16
 	- B -> 17
@@ -60,7 +60,7 @@
 	- D-pad Up -> 14
 	- D-pad Down -> 15
 	- Xbox Btn (guide btn) -> 22
-        - Start Btn -> 11
+	- Start Btn -> 11
 ### Circuitpython (2nd Raspberry pi pico): 
 - Disconnect the Pico from the computer.
 - Press/Hold the BOOTSEL btn.
