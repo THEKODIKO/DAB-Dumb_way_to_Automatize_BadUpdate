@@ -6,23 +6,27 @@
 
 ### Features:
 - Runs automatically upon xbox's power on.
-- It gives audio feedback, so you know at what stage the exploit is. (but this is optional!)
-- It keep trying until it succeeds, plays a tone upon success and enjoy!
+- It gives audio feedback, so you know at what stage the exploit is.
+- It keep trying until it succeeds.
+- Plays a tone upon success and enjoy! (in progress)
 - No need to even connect to any screen (video output) while the system is trying to run the exploit. (headless)
-- And in the upcoming version it'll only require a pico and IR transmitter. (but it'll take some time, any help will be highly appreciated.)
 
 
 ## Items Required : 
 
- 1. Raspberry pi pico (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/raspberry-pi/SC0915/13624793]
- 2. Raspberry pi pico H (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/raspberry-pi/SC0917/16608257]
- 3. IR Transmitter (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/IR333-A/2675571]
- 4. Some wires 
- 5. 220uf Electrolytic Capacitors  (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/rubycon/25YXJ220M6-3X11/3563124]
- 6. 3.5 mm Audio Jack (aux port) breakout board (1 pcs.) [for ref. https://www.digikey.in/en/products/detail/kycon-inc/STX-3000/9975995]
- 7. Aux Cable (1 pcs.)
- 8. Micro USB to Standard USB cable (1 pcs.) [also called Micro USB to USB type A cable]
- 9. Soldering Iron/Solder wire
+ 1. Raspberry pi pico (2 pcs.) [for ref. https://www.digikey.com/en/products/detail/raspberry-pi/SC0915/13624793]
+ 2. IR Transmitter (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/IR333-A/2675571]
+ 3. Some wires 
+ 4. 220uf Electrolytic Capacitors  (2 pcs.) [for ref. https://www.digikey.com/en/products/detail/rubycon/25YXJ220M6-3X11/3563124]
+ 5. 3.5 mm Audio Jack (aux port) breakout board (1 pcs.) [for ref. https://www.digikey.in/en/products/detail/kycon-inc/STX-3000/9975995]
+ 6. Buzzer
+ 7. Push Button
+ 8. LDR sensor (Dark resistance: 1-20 Mohm).
+ 9. 3.3K ohm resistor.
+ 10. Green LED. (will be used in future versions for signifying hack done)
+ 11. Aux Cable (1 pcs.)
+ 12. Micro USB to Standard USB cable (1 pcs.) [also called Micro USB to USB type A cable]
+ 13. Soldering Iron/Solder wire
 
 ## Skills Required:
 
@@ -37,13 +41,18 @@
 - Santroller [get the latest release: https://github.com/Santroller/Santroller/releases/]
 - Circuitpython [get the latest release: https://circuitpython.org/board/raspberry_pi_pico/]
 ## Hardware Installation:
-- See video -> []
+### The main raspberry pi pico (all the components will be connected to this pico)
+- Connect a 220uF capacitor to the power rail of the pico. (+ve -> VSYS and -ve -> GND)
+- Connect another 220uF capacitor to the aux port input. (+ve -> GP26 and -ve -> GND)
+- follow the following schematic:
+- ![the main rp pico schematic](https://github.com/THEKODIKO/DAB-Dumb_way_to_Automatize_BadUpdate/blob/03b6bb88d1cd69901b71c4549e3cbea72c5d8893/assets/main-rp-pico-schematic.jpg "the main rp pico schematic")
+
 
 ## Software Setup:
 **Note**: Since you have 2 Raspberry pi picos, one of them will server as a santroller and the other will contain the circuitpython code. Also it doesn't matter which raspberry pi pico is what.
-### Santroller (1st Raspberry pi pico ):
-- Video link (full setup): https://youtu.be/sRtnlW2Wy2o
-- Pinout (Raspberry pi pico):
+### Santroller (the controller emulating Raspberry pi pico ):
+- Video link (full setup, also check the description): https://youtu.be/sRtnlW2Wy2o
+- Pinout (Pulled Down) (Raspberry pi pico):
 	- A -> 16
 	- B -> 17
 	- X -> 12
@@ -54,7 +63,8 @@
 	- D-pad Ryt -> 20
 	- D-pad Up -> 14
 	- D-pad Down -> 15
-	- Xbox Btn -> 22
+	- Xbox Btn (guide btn) -> 22
+	- Start Btn -> 11
 ### Circuitpython (2nd Raspberry pi pico): 
 - Disconnect the Pico from the computer.
 - Press/Hold the BOOTSEL btn.
