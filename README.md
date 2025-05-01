@@ -14,15 +14,19 @@
 
 ## Items Required : 
 
- 1. Raspberry pi pico (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/raspberry-pi/SC0915/13624793]
- 2. Raspberry pi pico H (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/raspberry-pi/SC0917/16608257]
- 3. IR Transmitter (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/IR333-A/2675571]
- 4. Some wires 
- 5. 220uf Electrolytic Capacitors  (2 pcs.) [for ref. https://www.digikey.com/en/products/detail/rubycon/25YXJ220M6-3X11/3563124]
- 6. 3.5 mm Audio Jack (aux port) breakout board (1 pcs.) [for ref. https://www.digikey.in/en/products/detail/kycon-inc/STX-3000/9975995]
- 7. Aux Cable (1 pcs.)
- 8. Micro USB to Standard USB cable (1 pcs.) [also called Micro USB to USB type A cable]
- 9. Soldering Iron/Solder wire
+ 1. Raspberry pi pico (2 pcs.) [for ref. https://www.digikey.com/en/products/detail/raspberry-pi/SC0915/13624793]
+ 2. IR Transmitter (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/IR333-A/2675571]
+ 3. Some wires 
+ 4. 220uf Electrolytic Capacitors  (2 pcs.) [for ref. https://www.digikey.com/en/products/detail/rubycon/25YXJ220M6-3X11/3563124]
+ 5. 3.5 mm Audio Jack (aux port) breakout board (1 pcs.) [for ref. https://www.digikey.in/en/products/detail/kycon-inc/STX-3000/9975995]
+ 6. Buzzer
+ 7. Push Button
+ 8. LDR sensor (Dark resistance: 1-20 Mohm).
+ 9. 3.3K ohm resistor.
+ 10. Green LED. (will be used in future versions for signifying hack done)
+ 11. Aux Cable (1 pcs.)
+ 12. Micro USB to Standard USB cable (1 pcs.) [also called Micro USB to USB type A cable]
+ 13. Soldering Iron/Solder wire
 
 ## Skills Required:
 
