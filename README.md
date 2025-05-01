@@ -45,7 +45,7 @@
 - Connect a 220uF capacitor to the power rail of the pico. (+ve -> VSYS and -ve -> GND)
 - Connect another 220uF capacitor to the aux port input. (+ve -> GP26 and -ve -> GND)
 - follow the following schematic:
-- ![the main rp pico schematic](https://github.com/THEKODIKO/DAB-Dumb_way_to_Automatize_BadUpdate/blob/9ef4fc86da7cf174522e9c2a99d1b0a916c47d0f/assets/main-rp-pico-schematic.jpg "the main rp pico schematic")
+![the main rp pico schematic](https://github.com/THEKODIKO/DAB-Dumb_way_to_Automatize_BadUpdate/blob/9ef4fc86da7cf174522e9c2a99d1b0a916c47d0f/assets/main-rp-pico-schematic.jpg "the main rp pico schematic")
 
 
 ## Software Setup:
