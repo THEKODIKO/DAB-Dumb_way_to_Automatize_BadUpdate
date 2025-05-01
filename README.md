@@ -71,8 +71,8 @@
 - Disconnect the Pico from the computer.
 - Press/Hold the BOOTSEL btn.
 - Now re-connect the Pico.
-- Now a new drive will appear in File Explorer. [image: https://drive.google.com/file/d/1GN7dG9lE5OkKltLHeDHoa1IMckQbaWBi/view?usp=sharing]
-![RPI-RP2](https://drive.google.com/file/d/1GN7dG9lE5OkKltLHeDHoa1IMckQbaWBi/view?usp=sharing)
+- Now a new drive will appear in File Explorer.
+![RPI-RP2](https://github.com/THEKODIKO/DAB-Dumb_way_to_Automatize_BadUpdate/blob/aa2319266f253f76fae2c06939434fb5cbf1ae86/assets/img_1.jpg "RPI-RP2")
 - Copy/Paste the 'flash_nuke.uf2' [this file is included when you download the release]
 - The Pico will automatically disconnect and after few seconds re-connect. Then Copy/Paste the circuitpython (.uf2) file to the pico volume you downloaded in the installation section.
 - Again the pico will disconnect and re-connect, Now copy paste the .py files of the release to the pico volume.
