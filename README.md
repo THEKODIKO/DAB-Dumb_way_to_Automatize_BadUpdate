@@ -45,13 +45,15 @@
 - Connect a 220uF capacitor to the power rail of the pico. (+ve -> VSYS and -ve -> GND)
 - Connect another 220uF capacitor to the aux port input. (+ve -> GP26 and -ve -> GND)
 - follow the following schematic:
-- ![the main rp pico schematic](https://github.com/THEKODIKO/DAB-Dumb_way_to_Automatize_BadUpdate/blob/03b6bb88d1cd69901b71c4549e3cbea72c5d8893/assets/main-rp-pico-schematic.jpg "the main rp pico schematic")
+![the main rp pico schematic](https://github.com/THEKODIKO/DAB-Dumb_way_to_Automatize_BadUpdate/blob/9ef4fc86da7cf174522e9c2a99d1b0a916c47d0f/assets/main-rp-pico-schematic.jpg "the main rp pico schematic")
 
 
 ## Software Setup:
 **Note**: Since you have 2 Raspberry pi picos, one of them will server as a santroller and the other will contain the circuitpython code. Also it doesn't matter which raspberry pi pico is what.
 ### Santroller (the controller emulating Raspberry pi pico ):
 - Video link (full setup, also check the description): https://youtu.be/sRtnlW2Wy2o
+- Start Button config (missed in the video)
+![start button config](https://github.com/THEKODIKO/DAB-Dumb_way_to_Automatize_BadUpdate/blob/9ef4fc86da7cf174522e9c2a99d1b0a916c47d0f/assets/start_btn_config.jpg "start button config")
 - Pinout (Pulled Down) (Raspberry pi pico):
 	- A -> 16
 	- B -> 17
