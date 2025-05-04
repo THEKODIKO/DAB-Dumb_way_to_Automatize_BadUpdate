@@ -14,19 +14,19 @@
 
 ## Items Required : 
 
- 1. Raspberry pi pico (2 pcs.) [for ref. https://www.digikey.com/en/products/detail/raspberry-pi/SC0915/13624793]
- 2. IR Transmitter (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/IR333-A/2675571]
- 3. Some wires 
- 4. 220uf Electrolytic Capacitors  (2 pcs.) [for ref. https://www.digikey.com/en/products/detail/rubycon/25YXJ220M6-3X11/3563124]
+ 1. Xbox 360 E! (as only this console version has an AV port, which you can also use for audio output)
+ 2. Raspberry pi pico (2 pcs.) [for ref. https://www.digikey.com/en/products/detail/raspberry-pi/SC0915/13624793]
+ 3. IR Transmitter (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/IR333-A/2675571]
+ 4. Some wires 
  5. 3.5 mm Audio Jack (aux port) breakout board (1 pcs.) [for ref. https://www.digikey.in/en/products/detail/kycon-inc/STX-3000/9975995]
- 6. Buzzer
- 7. Push Button
+ 6. Buzzer (optional)
+ 7. Push Button (optional)
  8. LDR sensor (Dark resistance: 1-20 Mohm).
  9. 3.3K ohm resistor.
- 10. Green LED. (will be used in future versions for signifying hack done)
+ 10. Green LED. (will be used in future versions for signifying hack done) (optional)
  11. Aux Cable (1 pcs.)
  12. Micro USB to Standard USB cable (1 pcs.) [also called Micro USB to USB type A cable]
- 13. Soldering Iron/Solder wire
+ 13. Soldering Iron/Solder wire. [optional, if you use jumper wires and ] 
 
 ## Skills Required:
 
@@ -42,9 +42,10 @@
 - Circuitpython [get the latest release: https://circuitpython.org/board/raspberry_pi_pico/]
 ## Hardware Installation:
 ### The main raspberry pi pico (all the components will be connected to this pico)
-- Connect a 220uF capacitor to the power rail of the pico. (+ve -> VSYS and -ve -> GND)
-- Connect another 220uF capacitor to the aux port input. (+ve -> GP26 and -ve -> GND)
-- follow the following schematic:
+- Firstly mark one of the RP pico as the main, and it'll connect to all the components.
+- Connect the 2 rp picos together:
+![inter rp pico connection schematic](https://github.com/THEKODIKO/DAB-Dumb_way_to_Automatize_BadUpdate/blob/6d41bb9ce0efafa112a2f718f6c9985117f0116f/assets/inter-rp-pico-connection-schematic.jpg "inter rp pico connection schematic")
+- Follow the following schematic for connecting the components to the main pico board:
 ![the main rp pico schematic](https://github.com/THEKODIKO/DAB-Dumb_way_to_Automatize_BadUpdate/blob/9ef4fc86da7cf174522e9c2a99d1b0a916c47d0f/assets/main-rp-pico-schematic.jpg "the main rp pico schematic")
 
 
@@ -76,14 +77,17 @@
 - Copy/Paste the 'flash_nuke.uf2' [this file is included when you download the release]
 - The Pico will automatically disconnect and after few seconds re-connect. Then Copy/Paste the circuitpython (.uf2) file to the pico volume you downloaded in the installation section.
 - Again the pico will disconnect and re-connect, Now copy paste the .py files of the release to the pico volume.
+### Pendrive Setup:
+- Ready up the pendrive by following: https://www.youtube.com/watch?v=3Ay0V2edQJU
+- (Optional) setting up XeUnshackle is highly recommended, follow: https://www.youtube.com/watch?v=6JhnigHnXts
+- If you have any audio files on the pendrive, remove them, then paste the 'sound_test.mp3' file on the pendrive root.
 
 # You're Done! Congratulations🎉🎉
 - Now shut down your Xbox 360 (don't disconnect the power though); connect the raspberry pi pico which is the santroller to your Xbox and Now the Xbox must turn on. (see the expected behavior: )
-- Forgot which pico is the santroller? try both them for few seconds and see which works and mark it.
-- If it doesn't, don't worry it happens to the best of us, check the troubleshooting section below. 
+- If it doesn't turn on, don't worry it happens, check the troubleshooting section below. 
 
 ##  Troubleshooting
-Under work...
+- Forgot which pico is the santroller? try both them for few seconds and see which works and mark it.
 
 # Credits
 **Author**:  
