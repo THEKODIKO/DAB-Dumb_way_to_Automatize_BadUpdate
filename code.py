@@ -191,13 +191,13 @@ def get_led_clr():
 
 
 def get_avg_vol(samples= 100):
-    _= 0
+    _temp= 0
     
     for _ in range(samples):
-        _+= abs(pins["aux"].value-AVG_LVL)
+        _temp+= abs(pins["aux"].value-AVG_LVL)
         time.sleep(0.01)
     
-    return (_/samples)>1.3
+    return (_temp/samples)>1.3
 
 
 
@@ -422,6 +422,10 @@ def main():
 main()
 
 
+if confirm_hacked():
+    hack_complete= True
+    press("buzzer", 5000)
+    print("HACK DONE!!!")
 
 
 
