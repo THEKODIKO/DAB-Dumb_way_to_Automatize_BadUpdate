@@ -16,7 +16,7 @@
 
  1. Xbox 360 E! (as only this console version has an AV port, which you can also use for audio output)
  2. Raspberry pi pico (2 pcs.) [for ref. https://www.digikey.com/en/products/detail/raspberry-pi/SC0915/13624793]
- 3. IR Transmitter (1 pcs.) [for ref. https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/IR333-A/2675571]
+ 3. IR Transmitter (1 pcs. but better buy 2 just in case) [for ref. https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/IR333-A/2675571]
  4. Some wires 
  5. 3.5 mm Audio Jack (aux port) breakout board (1 pcs.) [for ref. https://www.digikey.in/en/products/detail/kycon-inc/STX-3000/9975995]
  6. Buzzer (optional)
